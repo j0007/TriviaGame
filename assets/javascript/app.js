@@ -100,20 +100,21 @@ if ($('input:checkbox[name="' + questionSet[i].name + '"]:checked').val() === qu
   function countdown() {
       if (timeLeft == -1) {
           clearTimeout(timerId);
-          doSomething();
+          timesUp();
       } else {
           elem.innerHTML = "Time Left: 00:"+timeLeft;
           timeLeft--;
       }
   }
   
-  function doSomething() {
-      alert("Times up!")
-      $("#timer").text("Score: "+results);
+  function timesUp() {
+      alert("FINISHED!!!")
+      $("#timer").text("Score: "+results+"/6");
   }
   
+    //Sumbit button  
+    $("#submit").click(function() {
+        clearTimeout(timerId);
+        timesUp();
+        }); 
 
-  //Sumbit button  
-  $("#submit").click(function() {
-    $("#timer").text("Score: "+results)
-    }); 
