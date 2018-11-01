@@ -1,0 +1,17 @@
+body{
+    background-color:grey;
+  
+}
+h1 {
+    margin:auto;
+}
+
+#qField{
+    margin:auto;
+    color:aliceblue;
+}
+
+#timer{
+    margin:auto;
+    font-size: 30px;
+}
