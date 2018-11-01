@@ -16,6 +16,8 @@ h1 {
 }
 
 #timer{
-    margin:auto;
-    color:red;
+    top:200px;
+    left:700px;
+    color:white;
+    z-index: 10;
 }

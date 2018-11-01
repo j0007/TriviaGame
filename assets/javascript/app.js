@@ -78,6 +78,8 @@ $("#qField").append(box + questionSet[i].options.b + "<br>");
 $("#qField").append(box + questionSet[i].options.c + "<hr>");
 console.log(questionSet[i].corAns);
 
+
+// Need to work on making this add up results
 var results = 0;
 
 if ($('input:checkbox[name="' + questionSet[i].name + '"]:checked').val() === questionSet[i].corAns) {
@@ -88,10 +90,6 @@ if ($('input:checkbox[name="' + questionSet[i].name + '"]:checked').val() === qu
 }
 
 
-  //Sumbit button
-  $("#submit").click(function() {
-    $("#timer").text("Score: "+results)
-    }); 
 
 
   //Timer
@@ -104,7 +102,7 @@ if ($('input:checkbox[name="' + questionSet[i].name + '"]:checked').val() === qu
           clearTimeout(timerId);
           doSomething();
       } else {
-          elem.innerHTML = "00:"+timeLeft;
+          elem.innerHTML = "Time Left: 00:"+timeLeft;
           timeLeft--;
       }
   }
@@ -114,3 +112,8 @@ if ($('input:checkbox[name="' + questionSet[i].name + '"]:checked').val() === qu
       $("#timer").text("Score: "+results);
   }
   
+
+  //Sumbit button  
+  $("#submit").click(function() {
+    $("#timer").text("Score: "+results)
+    }); 
