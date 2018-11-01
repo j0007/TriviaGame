@@ -1,17 +1,22 @@
 body{
-    background-color:grey;
-  
+    background-image: url("../images/foodbackground1.jpg");
+    background-size:cover;
+    text-shadow: 2px 2px #000000;
+    font-size:25px;
+    font-family: 'Baloo Bhaijaan', cursive;
 }
 h1 {
     margin:auto;
+    color:white;
 }
 
 #qField{
     margin:auto;
-    color:aliceblue;
+    color:orange;
 }
 
 #timer{
     margin:auto;
     font-size: 30px;
+    color:red;
 }

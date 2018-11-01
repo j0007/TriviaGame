@@ -83,11 +83,14 @@ console.log(questionSet[i].corAns);
 if ($('input:checkbox[name="' + questionSet[i].name + '"]:checked').val() === questionSet[i].corAns) {
 
     results++;
-    console.log("this is correct! number:")
-
 };
 
 }
+
+  //Sumbit button
+  $("submit").click(function() {
+    $("#timer").text(results)
+    }); 
 
 
   //Timer
@@ -110,6 +113,3 @@ if ($('input:checkbox[name="' + questionSet[i].name + '"]:checked').val() === qu
       $("#timer").text(results);
   }
   
-  //Sumbit button
-
-  $("#submit").onClick($("#timer").text(results))
