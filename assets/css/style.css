@@ -12,11 +12,10 @@ h1 {
 
 #qField{
     margin:auto;
-    color:orange;
+    color:yellow;
 }
 
 #timer{
     margin:auto;
-    font-size: 30px;
     color:red;
 }

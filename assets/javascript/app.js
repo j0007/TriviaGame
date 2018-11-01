@@ -67,7 +67,6 @@ var questionSet = [
 //=======================
 
 
-var results = "";
 
 for(i=0; i<questionSet.length; i++){
 
@@ -79,6 +78,7 @@ $("#qField").append(box + questionSet[i].options.b + "<br>");
 $("#qField").append(box + questionSet[i].options.c + "<hr>");
 console.log(questionSet[i].corAns);
 
+var results = 0;
 
 if ($('input:checkbox[name="' + questionSet[i].name + '"]:checked').val() === questionSet[i].corAns) {
 
@@ -87,9 +87,10 @@ if ($('input:checkbox[name="' + questionSet[i].name + '"]:checked').val() === qu
 
 }
 
+
   //Sumbit button
-  $("submit").click(function() {
-    $("#timer").text(results)
+  $("#submit").click(function() {
+    $("#timer").text("Score: "+results)
     }); 
 
 
@@ -110,6 +111,6 @@ if ($('input:checkbox[name="' + questionSet[i].name + '"]:checked').val() === qu
   
   function doSomething() {
       alert("Times up!")
-      $("#timer").text(results);
+      $("#timer").text("Score: "+results);
   }
   
